@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+        <html>
+            <head>
+                <title>
+                 layout demo
+                </title>
+                <style>
+
+                    body {
+                    margin:0;
+                    ;
+                }
+                    #header {
+                        height:30px;
+                        background-color: lightskyblue;
+                        color: ghostwhite;
+                        text-align: center;
+                        line-height: 1.8;
+
+                    }
+                    #main {
+                        background-color: lightgrey;
+                    }
+                    #nav{
+                        background-color: lightgrey;
+                        width: 100px;
+                        float:left;
+
+                    }
+                    #content {
+                        background-color: linen;
+                        margin-left: 101px;
+                        padding: 10px 10px 16px;
+
+                    }
+                    #content ul {
+                        width: 100px;
+                        margin: 0 auto;
+                    }
+                    /*this is how we write very specific selectors can be more selective*/
+
+                    #footer {
+                        background-color: orange;
+                        color: #ffffff;
+                        height: 30px;
+
+                    }
+                    .clearfix {
+                        clear:both;
+                    }
+
+                </style>
+            </head>
+            <body>
+                <div id="header">
+                    Header
+                </div>
+
+                <div id="main">
+                    <div id="nav">
+                        <ul>
+                        <li><a href="">some</a></li>
+                        <li><a href="">bad</a></li>
+                        <li><a href="">layout</a></li>
+                        <li><a href="">design</a></li>
+                        </ul>
+                    </div>
+                    <div id="content">
+                        <h1>HELLO FRANKLIN</h1>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium alias deleniti deserunt dicta ea eius est fuga, hic, id in, laudantium magni minima neque nulla
+                            placeat quas quibusdam vero?</p>
+
+                        <p>Atque consectetur dicta fugiat iusto laborum maxime nesciunt omnis quam sequi vero. Aliqua consectetur culpa cupiditate eligendi enim in, magni minima molestiae molestias, natus quorerum saepe soluta suscipit voluptatibus!</p>
+
+                        <p>Adipisci amet blanditiis consectetur cumque dignissimos eos est ipsam ipsum itaque, nemo officiis porro reiciendis sit soluta suscipit tempore voluptatibus? Aperiam blanditiis cumque minus numquam perspiciatis quia ratione temporibus velit?</p>
+                        <ul>
+                            <li>hotdog</li>
+                            <li>hamburger</li>
+                            <li>cheeseburger</li>
+                            <li>veggieburger</li>
+                            <li>portabelo</li>
+                            <li>chicken</li>
+
+                        </ul>
+                </div>
+
+                    <div class="clearfix"></div>
+
+                    </div>
+
+                <div id="footer">
+                    footer
+                </div>
+            </body>
+
+
+        </html>
