@@ -1,0 +1,95 @@
+body {
+
+}
+
+
+.field {
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.infield {
+    width:250px;
+    height: 250px;
+    background-color: darkgreen;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 75px;
+    left: 125px;
+    z-index: 2;
+}
+
+.homePlate,
+.pitchersMound {
+    background-color: tan;
+}
+
+.basePath{
+    postiion: absolute;
+    z-index:1;
+    width:125px;
+    height:125px;
+
+}
+.base{
+
+}
+.lbox{
+    border: 1px solid #fff;
+    height: 15px;
+    width: 8px;
+    position: absolute;
+
+}
+
+.rbox{
+    border: 1px solid #fff;
+    right: 0;
+    width: 8px;
+    height: 15px;
+    position: absolute;
+}
+
+div.rubber{
+    backgournd: #fff;
+    width: 15px;
+    height: 5px;
+}
+
+.base {
+    width: 14px;
+    height:14px;
+    background-color: white;
+    position: absolute;
+}
+
+.firstBase {
+    top:0;
+    right:0;
+}
+.secondBase {
+    top:0;
+    right:0;
+}
+.thirdBase {
+    top:0;
+    right:0;
+}
+
+.homePlate {
+
+}
+.pitchersMound{
+    width:60px;
+    height: 60px;
+    border-radius: 35px;
+    position: absolute;
+
+}

@@ -1,0 +1,171 @@
+/*First we will take care of default parent stuff*/
+/*Set font family to san-serif, background color, and default font color*/
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color:forestgreen;
+}
+
+#specials,
+.columns {
+
+    width: 800px;
+    margin: 0 auto;
+    /*put a border around the specials, combined into one line pixels wide, pattern, color*/
+    border: 2px solid red;
+    /*need to put padding so that text goes inside box*/
+    padding: 10px;
+    /*also curve edges*/
+    border-radius: 10px;
+    /*too much white space, can do line height to fix. Use line-height whole values, not percentage because it could affect your display*/
+
+}
+/*because i applied the same rule to the class "columns" i will need to over ride other rules*/
+
+#specials td {
+    line-height: .80;
+
+}
+
+
+/*only target thead not the rest of the special dishes class*/
+
+.specialDishes thead td {
+    color: red;
+    font-size: 10px;
+    text-align: right;
+    /*padding:0 10px 0 9px;*/
+    /*this would affect "Special Dishes in the third cell but we used the n-th child rule below and since it applys after it is what is seen*/
+    /*padding the padding separated made the columns mis-align so instead we put only padding on left*/
+    padding-left:19px;
+}
+/*n-th child is algebraic. it starts at 1. so it is the 3rd cell - hence the (3). This targets the "Special Dishes text in the specials table = can yous the n-th child to repeat... nth-child (3-1)*/
+/*in our tree... table> thead> tr> td1 = td2 = td3 = td4 ---- if i want to target the 3rd cell(td3) nth-child (3)*/
+/*can also use: first-child and last-child, first targets td1, last td4^^^ -- ben uses it in buttons on navigation bar. last-child border left 0; can also use "Even" and "odd" to apply to every other one...*/
+
+.specialDishes thead td:nth-child(3) {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 0;
+    text-transform: lowercase;
+    /*makes all lower case*/
+    font-variant: small-caps;
+    /*changes to small caps*/
+    letter-spacing: 1px;
+    /*widens space*/
+}
+/*.specialDishes tr:nth-child(3){*/
+    /*color:red}*/
+
+/*tr will make it horizontally change color, td will do the vertical columns*/
+
+/*putting dots into the table... will try to use borders. Affect "table body cells"... this might not work.*/
+.specialDishes tbody td {
+    border-bottom: 2px dotted forestgreen;
+    text-align: right;
+}
+
+.specialDishes tbody td:nth-child(3) {
+    width:285px;
+    text-align: left;
+    /*this is nth-child in the BODy not hte HEAD like up above*/
+}
+
+.columns {
+    border: 0;
+    padding: 0;
+
+}
+
+.col {
+    float:left;
+    width:360px;
+    padding-right:40px;
+
+    /*margin: was set at 800 px. need to realize that each column now has 8px of margins^*/
+
+
+}
+.col:last-child {
+    float: right;
+    padding: 0;
+}
+.columns h1,
+.columns h2,
+.columns h3,
+.columns h4 {
+    color:red;
+    text-align: center;
+    text-transform:lowercase;
+    font-variant:small-caps;
+}
+.hours,
+.columns p {
+    text-align: center;
+
+}
+
+.columns p {
+    color: red;
+    font-size:12px;
+
+}
+
+
+.labels {
+
+    color:red;
+    font-size:12px;
+
+/*this is a hack. but it works beautifully. calculates the height so that it knows where it would cut off. it then calculates it's own height. we don't have content that will be hidden, we are just using the behavior to counteract the float and calculate; another option is to use markup in html with class clearfix. clear both. if we did this we would have to put this in after every single float.... dead weight... every character counts. <div class= "clearfix"></div> and then .clearfix { clear:both}*/
+}
+/*.labels span{*/
+    /*color: red;*/
+    /*font-size: 12px;*/
+    /*removed because added the rule to .labels above*/
+
+.labels span:first-child {
+    /*targeted by using first-child... span do not pay attention to width, height padding margin because they are in-line. so much change the property of the span to inline-block so it will pay attention to all that stuff. */
+    width:288px;
+    display: inline-block;
+    text-align: center;
+
+}
+.labels span:last-child{
+    /*put a space in between labels and span because now talking about a span. no space between span and last child.. considered pseudo tag*/
+    margin-left: 20px;
+    display: inline-block;
+    /*span tags used instead of div tags because they do not require their own line/want to take up the whole space*/
+
+}
+.itemPrice {
+    float:right
+}
+
+.itemPrice.small {
+    /*same element with two different classes .class.classb */
+    margin-left:16px;}
+
+.spicy{
+    color:red;
+}
+.spicy .itemNumber{
+    background: url(pepper.gif)no-repeat 30px 5px;
+    padding-right: 16px;
+}
+
+.columns .col:last-child .spicy .itemNumber {
+    background-position-x:21px;}
+
+.lunchSpecials {
+
+    border-bottom: 7px solid red;
+    padding-bottom: 10px;
+}
+
+/*itemPrice small,*/
+/*itemPrice large,*/
+/*itemPrice will apply to both where itemPrice small will only apply to small, itemPrice large will only apply to large*/
+
+}

@@ -1,0 +1,57 @@
+h1 {
+    font-family: 'Creepster', sans-serif;
+    color: #185726;
+    text-align: center;
+    font-size: 80px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+ul li {
+    height:85px;
+    width: 85px;
+    margin: 5px;
+    display: inline-block;
+    border: 5px solid #000000;
+    border-radius: 15px;
+    /*background-image:*/
+    /*background-repeat: no-repeat;*/
+}
+
+#one { background-image: url("http://www.wpclipart.com/holiday/halloween/pumpkin/pumpkins_4/Pumpkin_carved.png");
+    background-repeat: no-repeat;
+
+}
+
+#two {
+    background-image: url("http://www.servicesca.org/images/animatedhalloween_03.gif");
+    background-repeat: no-repeat;
+
+}
+
+#three {
+    background-image: url("http://www.wondercliparts.com/holidays/halloween/halloween_graphics_27.gif");
+    background-repeat: no-repeat;
+}
+
+#four {
+    background-image: url("http://www.clipartsfree.net/vector/small/yeKcim_halloween_pumpkins_3_Clipart_Free.png");
+    background-repeat: no-repeat;
+}
+#five {
+    background-image: url("http://4.bp.blogspot.com/-Wtn46E6GhRs/UGoJQgRcYsI/AAAAAAAAUtI/Ey4yHxGUHW8/s1600/halloweencat.gif");
+    background-repeat: no-repeat;
+}
+
+.fat:hover, .fatter,.current{
+
+    height: 300px;
+    width: 300px;
+}

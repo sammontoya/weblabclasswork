@@ -1,0 +1,73 @@
+
+
+function maxNumber (x, y) {
+        if (x>y){
+            return x;
+        } else if ( x<y){
+            return y;
+        }
+            return x;
+      }
+
+
+    function getMax (x, y, z){
+
+        return mn(mn(x,y), mn(y, z));
+        }
+        ^ calls function 3 times taking the max number of x and y and max number of y and z.
+
+      }
+        return mn(mn(x,y), z)
+
+        ^removed logic branches out of the code.
+
+        Introducing something to our conditions.
+
+    function getMax (x, y, z){
+
+        if (x ≥ y || x ≥ z )&& y>z (weird syntax thing that he did)
+
+}
+
+    function getMax (x, y, z){
+    if (x≥y && x≥z) {
+            return x;
+    } else if (y > x & & y ≥z){
+            return y;
+    } else{
+        return z;
+  }
+
+        var name = "   hello world   ";
+        name.trim()
+
+        ^ will trim th extra white space
+        console.log (name) will return with white space
+        console.log(name.trim) will return trimmed name
+
+        When someome is inputting into a form he almost always runs a trim on it.
+
+        var name = "nate";
+            name toUpperCase(); >>> "NATE"
+            name toLowerCase(); >>> revert it back.
+
+Methods interact with string, "method" is a fancy word for a function that applies to a particular type of object.
+
+
+        Capitalize first letter.
+
+    function capitalize(name) {
+        var firstLetter = name.charAt(0).
+                            to UpperCase(); // after the . is considered 'chaining'; nate prefers to format his code where dots line up.  he broke the code, but not really. White spaces are not readable in javascript//
+        var remainder = name.substr (1).
+                            to LowerCase(); // just do 1 and it will go to the end. Want to skip the rest. //
+
+}
+
+
+    function capitalize(name) {
+    var firstLetter = name.charAt(0)
+    var remainder = name.substr (1)
+
+        var upperCase = firstLetter to UpperCase();
+        return upperCase + remainder

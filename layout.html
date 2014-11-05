@@ -11,21 +11,26 @@
                         margin:0;
                 }
                     #header {
-                        height:30px;
+                        height:45px;
                         background-color: lightskyblue;
                         color: ghostwhite;
                         text-align: center;
                         line-height: 1.8;
-
+                        font-size: x-large;
+                        font-family: Helvetica Neue, Helvetica, Arial;
                     }
                     #main {
+                        /*instead of main we could have used an overflow: hidden to control the size of the content*/
                         background-color: lightgrey;
+                        font-family: Helvetica Neue, Helvetica, Arial
+                    /* shortcut, instead of naming all fonts say "sans-serif" it's a font-family. Listing them all is called font-stack? Windows will use arial and mac will use the other ones;*/
                     }
 
                     #nav{
                         background-color: lightgrey;
                         width: 100px;
                         float:left;
+                        /*can float left, right - have to clear when you're done see .clearfix and div id=clearfix below in html*/
 
                     }
                     #content {

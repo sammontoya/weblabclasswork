@@ -1,0 +1,55 @@
+.square {
+    width:175px;
+    height: 175px;
+
+}
+
+.v{
+    border-left: 5px solid #333333;
+    border-right: 5px solid #333333;
+
+
+}
+
+.h{
+    border-bottom: 5px solid#000;
+    border-top: 5px solid#000;
+
+}
+
+body {
+    background-color: peachpuff;
+    margin: 0px;
+}
+table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    background-color: lightgrey;
+    border-radius: 25px;
+
+}
+
+h1, h2 {
+    text-align: center;
+    margin: auto;
+}
+
+#top{
+    height: 100px;
+    border-bottom: 2px dotted #696665;
+    font-family: sans-serif 'oswald';
+    background-color: honeydew;
+}
+
+#footer {
+    height: 100px;
+    border-top: 2px dotted #696665;
+    font-family: sans-serif 'oswald';
+    background-color: honeydew;
+    margin-bottom: 0px;
+}
+
+.red {
+    color: red;
+}
+

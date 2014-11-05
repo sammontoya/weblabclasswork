@@ -1,0 +1,64 @@
+
+
+#topbar {
+    height: 120px;
+    background-color: darkgrey;
+
+}
+
+
+#topbar ul li {
+
+    display: inline;
+    color: #fff;
+    font-size: 35px;
+    padding: 0 15px;
+    position: relative;
+    float:left;
+    margin:25px 10px 0 0;
+    border-left: 1px dotted #ffffff;
+}
+
+button.click{
+    background-color: #aa480e;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    height: 55px;
+    border: 1px dotted white;
+    position:relative;
+    float: right;
+}
+
+#content {
+
+    height: 500px;
+    width: 500px;
+    float: none;
+    background-color: #ffffff;
+
+}
+#box {
+    height: 125px;
+    width: 125px;
+    border-radius: 25px 0px;
+    background-color: lime;
+    float: left;
+
+}
+
+#box2 {
+
+    height: 125px;
+    width: 125px;
+    border-radius: 0px 25px;
+    background-color: deeppink;
+    float: right;
+
+}
+
+#footer {
+    height: 120px;
+    background-color: darkgrey;
+}
+
